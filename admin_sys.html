@@ -143,42 +143,42 @@
 								</li>
 							</ul>
 						</li>
-						<li class="slide is-expanded">
+						<li class="slide">
 							<a class="side-menu__item" data-toggle="slide" href="#0"><i class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Users</span><i
 								 class="angle fa fa-angle-right"></i></a>
 							<ul class="slide-menu">
 								<li>
-									<a href="#user-subs" class="slide-item">Users Subscribe</a>
+									<a href="users.html#user-subs" class="slide-item">Users Subscribe</a>
 								</li>
 								<li>
-									<a href="#sys-users" class="slide-item">System Users</a>
+									<a href="users.html#sys-users" class="slide-item">System Users</a>
 								</li>
 								<li>
-									<a href="#user-sett" class="slide-item">Users settings</a>
+									<a href="users.html#user-sett" class="slide-item">Users settings</a>
 								</li>
 							</ul>
 						</li>
-						<li class="slide">
+						<li class="slide is-expanded">
 							<a class="side-menu__item" data-toggle="slide" href="#0"><i class="side-menu__icon fe fe-eye"></i><span class="side-menu__label">Administration</span><i
 								 class="angle fa fa-angle-right"></i></a>
 							<ul class="slide-menu">
 								<li>
-									<a href="admin_sys.html#sys-perf" class="slide-item">System performance</a>
+									<a href="#sys-perf" class="slide-item">System performance</a>
 								</li>
 								<li>
-									<a href="admin_sys.html#sys-sett" class="slide-item">System settings</a>
+									<a href="#sys-sett" class="slide-item">System settings</a>
 								</li>
 								<li>
-									<a href="admin_sys.html#sys-users" class="slide-item">System users</a>
+									<a href="#sys-users" class="slide-item">System users</a>
 								</li>
 								<li>
-									<a href="admin_sys.html#sys-alert" class="slide-item">System alerts</a>
+									<a href="#sys-alert" class="slide-item">System alerts</a>
 								</li>
 								<li>
-									<a href="admin_sys.html#sys-repo" class="slide-item">System reports</a>
+									<a href="#sys-repo" class="slide-item">System reports</a>
 								</li>
 								<li>
-									<a href="admin_sys.html#sys-stat" class="slide-item">System statistics</a>
+									<a href="#sys-stat" class="slide-item">System statistics</a>
 								</li>
 							</ul>
 						</li>
@@ -405,73 +405,251 @@
 							<div class="page-header mt-0 shadow p-3">
 								<ol class="breadcrumb mb-sm-0">
 									<li class="breadcrumb-item"><a href="#0">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Users</li>
+									<li class="breadcrumb-item active" aria-current="page">System performance</li>
 								</ol>
-							</div>							
-							<div class="card" id="user-subs">
+							</div>
+
+							<div class="card" id="sys-perf">
 								<div class="card-header">
-									<h2 class="mb-0">Users Subscribe</h2>
+									<h2 class="mb-0">System Performance</h2>
 								</div>
 								<div class="card-body">
-									<div class="table-responsive">
-										<table id="example" class="table table-striped table-bordered w-100 text-nowrap">
-											<thead>
-												<tr>
-													<th class="wd-15p">ID</th>
-													<th class="wd-15p">User name</th>
-													<th class="wd-20p">Subscription type</th>
-													<th class="wd-15p">Subscription Period</th>
-													<th class="wd-10p">Subscription Cost</th>
-													<th class="wd-25p">Subscription ends</th>
-													<th class="wd-25p"></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>5421</td>
-													<td>Chloe Donna</td>
-													<td>Standard</td>
-													<td>1 year</td>
-													<td>1500 SEK</td>
-													<td>01/01/2019</td>
-													<td><button type="button" class="float-right btn btn-sm btn-danger btn-pill">Stop Subscription</button></td>
-
-												</tr>
-												<tr>
-													<td>2753</td>
-													<td>Anton Anderss</td>
-													<td>PLUS</td>
-													<td>1 year</td>
-													<td>3500 SEK</td>
-													<td>01/01/2020</td>
-													<td><button type="button" class="float-right btn btn-sm btn-danger btn-pill">Stop Subscription</button></td>
-												</tr>
-												<tr>
-													<td>2647</td>
-													<td>Ann Marie</td>
-													<td>Standard</td>
-													<td>1 year</td>
-													<td>1500 SEK</td>
-													<td>01/01/2019</td>
-													<td><button type="button" class="float-right btn btn-sm btn-danger btn-pill">Stop Subscription</button></td>
-												</tr>
-												<tr>
-													<td>9201</td>
-													<td>Sandra dahlberg</td>
-													<td>PLUS</td>
-													<td>1 year</td>
-													<td>3500 SEK</td>
-													<td>01/01/2020</td>
-													<td><button type="button" class="float-right btn btn-sm btn-danger btn-pill">Stop Subscription</button></td>
-												</tr>
-											</tbody>
-										</table>
+									<div class="row">
+										<div class="col-xl-8">
+											<div class="card shadow">
+												<div class="card-body">
+													<div class="widget text-center">
+														<small class="h3">Network download Rate(Avg)</small>
+														<h2 class="text-xxl text-primary mb-0">30.12%</h2>
+														<p class="mb-0 text-light"><span class="text-lg font-weight-700"><i class="fas fa-caret-down text-danger ml-1"></i>
+																-10.22%</span> vs last month (40.27%)</p>
+													</div>
+												</div>
+												<span class="bar" data-peity='{ "fill": ["#00c31f"]}'>3,2,3,1,4,2,3,4,3,1,2,2,4,2,3,1,3,5</span>
+											</div>
+											<div class="card shadow">
+												<div class="card-body">
+													<div class="widget text-center">
+														<small class="h3">Network Upload Rate(Avg)</small>
+														<h2 class="text-xxl text-primary mb-0">45.25%</h2>
+														<p class="mb-0 text-light"><span class="text-lg font-weight-700"><i class="fas fa-caret-down text-danger ml-1"></i>
+																-15.72%</span> vs last month (60.97%)</p>
+													</div>
+												</div>
+												<span class="bar" data-peity='{ "fill": ["#00c3ed"]}'>8,6,1,4,9,3,8,2,9,2,7,6,3,6,2,6,9,7</span>
+											</div>
+										</div>
+										<div class="col-xl-4">
+											<div class="card pull-up shadow">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex server">
+															<div class="media-body text-left">
+																<h2 class="">Server1 </h2>
+																<h4 class=" mb-0 text-muted"><span class="text-primary"><i class="fe fe-arrow-up-circle "></i></span>
+																	Last 52 days Ago <span class="badge badge-primary">Online</span></h4>
+															</div>
+															<div class="align-self-center">
+																<i class="fe fe-hard-drive icon text-primary float-right"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card pull-up shadow">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex server">
+															<div class="media-body text-left">
+																<h2 class="">Server2</h2>
+																<h4 class=" mb-0 text-muted"><span class="text-primary"><i class="fe fe-arrow-up-circle "></i></span>
+																	Last 5 days Ago <span class="badge badge-primary">Online</span></h4>
+															</div>
+															<div class="align-self-center">
+																<i class="fe fe-hard-drive icon text-primary float-right"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card pull-up shadow">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex server">
+															<div class="media-body text-left">
+																<h2 class="">Server3</h2>
+																<h4 class=" mb-0 text-muted"><span class="text-danger"><i class="fe fe-arrow-down-circle "></i></span>
+																	Last 10 days Ago <span class="badge badge-danger">Offline</span></h4>
+															</div>
+															<div class="align-self-center">
+																<i class="fe fe-hard-drive icon text-danger float-right"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xl-4">
+											<div class="row">
+												<div class="col-12">
+													<div class="card shadow">
+														<div class="card-body text-center">
+															<h2 class="mb-4">Server 1 - CPU Usage</h2>
+															<div class="chart-circle" data-value="0.37" data-thickness="14" data-color="#ffa219f"><canvas width="120"
+																 height="120"></canvas>
+																<div class="chart-circle-value">
+																	<div class="h2">37%</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="card shadow">
+														<div class="card-body text-center">
+															<h2 class="mb-4">Server 1 - RAM Usage</h2>
+															<div class="chart-circle" data-value="0.33" data-thickness="14" data-color="#00c3ed"><canvas width="120"
+																 height="120"></canvas>
+																<div class="chart-circle-value">
+																	<div class="h2">34%</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4">
+											<div class="row">
+												<div class="col-12">
+													<div class="card shadow">
+														<div class="card-body text-center">
+															<h2 class="mb-4">Server 2 - CPU Usage</h2>
+															<div class="chart-circle" data-value="0.57" data-thickness="14" data-color="#ffa21d"><canvas width="120"
+																 height="120"></canvas>
+																<div class="chart-circle-value">
+																	<div class="h2">57%</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="card shadow">
+														<div class="card-body text-center">
+															<h2 class="mb-4">Server 2 - RAM Usage</h2>
+															<div class="chart-circle" data-value="0.33" data-thickness="14" data-color="#00c3ed"><canvas width="120"
+																 height="120"></canvas>
+																<div class="chart-circle-value">
+																	<div class="h2">34%</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-xl-4">
+											<div class="row">
+												<div class="col-12">
+													<div class="card shadow">
+														<div class="card-body text-center">
+															<h2 class="mb-4">Server 3 - CPU Usage</h2>
+															<div class="chart-circle" data-value="0.68" data-thickness="14" data-color="#f12fd1"><canvas width="120"
+																 height="120"></canvas>
+																<div class="chart-circle-value">
+																	<div class="h2">68%</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="card shadow">
+														<div class="card-body text-center">
+															<h2 class="mb-4">Server 3 - RAM Usage</h2>
+															<div class="chart-circle" data-value="0.33" data-thickness="14" data-color="#00c3ed"><canvas width="120"
+																 height="120"></canvas>
+																<div class="chart-circle-value">
+																	<div class="h2">34%</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card" id="sys-sett">
+								<div class="card-header">
+									<h2 class="mb-0">System Settings</h2>
+								</div>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-lg-4">
+											<div class="form-group mb-0">
+												<div class="form-label mb-3">System settings 1</div>
+												<label class="custom-switch">
+													<input type="checkbox" name="option" value="1" class="custom-switch-input " checked="">
+													<span class="custom-switch-indicator custom-switch-indicator-default custom-switch-indicator-lg"></span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="form-group mb-0">
+												<div class="form-label mb-3">System settings 2</div>
+												<label class="custom-switch">
+													<input type="checkbox" name="option" value="2" class="custom-switch-input">
+													<span class="custom-switch-indicator custom-switch-indicator-default custom-switch-indicator-lg"></span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="form-group mb-0">
+												<div class="form-label mb-3">System settings 3</div>
+												<label class="custom-switch">
+													<input type="checkbox" name="option" value="2" class="custom-switch-input">
+													<span class="custom-switch-indicator custom-switch-indicator-default custom-switch-indicator-lg"></span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="form-group mb-0">
+												<div class="form-label mb-3">System settings 4</div>
+												<label class="custom-switch">
+													<input type="checkbox" name="option" value="1" class="custom-switch-input " checked="">
+													<span class="custom-switch-indicator custom-switch-indicator-default custom-switch-indicator-lg"></span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="form-group mb-0">
+												<div class="form-label mb-3">System settings 5</div>
+												<label class="custom-switch">
+													<input type="checkbox" name="option" value="2" class="custom-switch-input">
+													<span class="custom-switch-indicator custom-switch-indicator-default custom-switch-indicator-lg"></span>
+												</label>
+											</div>
+										</div>
+										<div class="col-lg-4">
+											<div class="form-group mb-0">
+												<div class="form-label mb-3">System settings 6</div>
+												<label class="custom-switch">
+													<input type="checkbox" name="option" value="1" class="custom-switch-input " checked="">
+													<span class="custom-switch-indicator custom-switch-indicator-default custom-switch-indicator-lg"></span>
+												</label>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="card" id="sys-users">
 								<div class="card-header">
-									<h2 class="mb-0">System users</h2>
+									<h2 class="mb-0">System Users</h2>
 								</div>
 								<div class="card-body">
 									<div class="row tab-pane">
@@ -499,10 +677,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -523,10 +701,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -547,10 +725,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -571,10 +749,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -595,10 +773,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -619,10 +797,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -643,10 +821,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -667,10 +845,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -691,10 +869,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -715,10 +893,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -739,10 +917,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -763,10 +941,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -787,10 +965,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -811,10 +989,10 @@
 																					 data-toggle="dropdown" type="button"><span class="caret"></span> <span class="sr-only">View
 																							profile</span></button>
 																					<div class="dropdown-menu">
-																						<a class="dropdown-item" href="#0">Pause user profile</a>
-																						<a class="dropdown-item" href="#0">Block user account</a>
-																						<a class="dropdown-item" href="#0">Send a message</a>
-																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#0">Delete user account</a>
+																						<a class="dropdown-item" href="#">Follow</a>
+																						<a class="dropdown-item" href="#">Message</a>
+																						<a class="dropdown-item" href="#">Suggestion</a>
+																						<div class="dropdown-divider"></div><a class="dropdown-item" href="#">Delete</a>
 																					</div>
 																				</div>
 																			</div>
@@ -830,123 +1008,298 @@
 									</div>
 								</div>
 							</div>
-							<div class="card" id="user-sett">
+							<div class="card" id="sys-alert">
 								<div class="card-header">
-									<h2 class="mb-0">Users settings</h2>
+									<h2 class="mb-0">System Alerts</h2>
+								</div>
+								<div class="card-body">
+									<div class="nav-wrapper">
+										<ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link mb-sm-3 mb-md-0 active border" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1"
+												 role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="fe fe-users mr-2"></i>Users
+													alerts</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link mb-sm-3 mb-md-0 border" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2"
+												 role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="fe fe-thumbs-up mr-2"></i>Success
+													alerts</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link mb-sm-3 mb-md-0 border" id="tabs-icons-text-3-tab" data-toggle="tab" href="#tabs-icons-text-3"
+												 role="tab" aria-controls="tabs-icons-text-3" aria-selected="false"><i class="fe fe-info mr-2"></i>Warning
+													alerts</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link mb-sm-3 mb-md-0 border" id="tabs-icons-text-4-tab" data-toggle="tab" href="#tabs-icons-text-4"
+												 role="tab" aria-controls="tabs-icons-text-4" aria-selected="false"><i class="fe fe-slash mr-2"></i>Danger
+													alerts</a>
+											</li>
+										</ul>
+									</div>
+									<div class="card shadow mb-0">
+										<div class="card-body">
+											<div class="tab-content" id="myTabContent">
+												<div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+													<div class="alert alert-avatar d-flex alert-yellow alert-dismissible">
+														<span class="avatar rounded-circle mr-2"><img alt="Image placeholder" src="assets/img/faces/male/1.jpg"></span>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+														adipisicing
+														elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+														<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="alert alert-avatar d-flex alert-yellow alert-dismissible">
+														<span class="avatar rounded-circle mr-2"><img alt="Image placeholder" src="assets/img/faces/male/2.jpg"></span>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+														adipisicing
+														elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+														<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="alert alert-avatar d-flex alert-yellow alert-dismissible">
+														<span class="avatar rounded-circle mr-2"><img alt="Image placeholder" src="assets/img/faces/female/1.jpg"></span>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+														adipisicing
+														elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+														<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="alert alert-avatar d-flex alert-yellow alert-dismissible">
+														<span class="avatar rounded-circle mr-2"><img alt="Image placeholder" src="assets/img/faces/female/2.jpg"></span>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+														adipisicing
+														elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+														<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="alert alert-avatar d-flex alert-yellow alert-dismissible">
+														<span class="avatar rounded-circle mr-2"><img alt="Image placeholder" src="assets/img/faces/male/3.jpg"></span>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+														adipisicing
+														elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+														<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="alert alert-avatar d-flex alert-yellow alert-dismissible">
+														<span class="avatar rounded-circle mr-2"><img alt="Image placeholder" src="assets/img/faces/female/3.jpg"></span>
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur
+														adipisicing
+														elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+														<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+													<div class="alert alert-success" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-thumbs-up"></i></span>
+														<span class="alert-inner--text"><strong>Success!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+													<div class="alert alert-success" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-thumbs-up"></i></span>
+														<span class="alert-inner--text"><strong>Success!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+													<div class="alert alert-success" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-thumbs-up"></i></span>
+														<span class="alert-inner--text"><strong>Success!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+													<div class="alert alert-success" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-thumbs-up"></i></span>
+														<span class="alert-inner--text"><strong>Success!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+													<div class="alert alert-warning" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-info"></i></span>
+														<span class="alert-inner--text"><strong>Warning!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+													<div class="alert alert-warning" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-info"></i></span>
+														<span class="alert-inner--text"><strong>Warning!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+													<div class="alert alert-warning" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-info"></i></span>
+														<span class="alert-inner--text"><strong>Warning!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+													<div class="alert alert-warning" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-info"></i></span>
+														<span class="alert-inner--text"><strong>Warning!</strong> This is a warning alert—check it out that has
+															an icon too!</span>
+													</div>
+												</div>
+												<div class="tab-pane fade" id="tabs-icons-text-4" role="tabpanel" aria-labelledby="tabs-icons-text-4-tab">
+													<div class="alert alert-danger" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-slash"></i></span>
+														<span class="alert-inner--text"><strong>Danger!</strong> This is a warning alert—check it out that has an
+															icon too!</span>
+													</div>
+													<div class="alert alert-danger" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-slash"></i></span>
+														<span class="alert-inner--text"><strong>Danger!</strong> This is a warning alert—check it out that has an
+															icon too!</span>
+													</div>
+													<div class="alert alert-danger" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-slash"></i></span>
+														<span class="alert-inner--text"><strong>Danger!</strong> This is a warning alert—check it out that has an
+															icon too!</span>
+													</div>
+													<div class="alert alert-danger" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-slash"></i></span>
+														<span class="alert-inner--text"><strong>Danger!</strong> This is a warning alert—check it out that has an
+															icon too!</span>
+													</div>
+													<div class="alert alert-danger" role="alert">
+														<span class="alert-inner--icon"><i class="fe fe-slash"></i></span>
+														<span class="alert-inner--text"><strong>Danger!</strong> This is a warning alert—check it out that has an
+															icon too!</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card" id="sys-repo">
+								<div class="card-header">
+									<h2 class="mb-0">System Reports</h2>
+								</div>
+								<div class="card-body">
+									<h2 class="mb-0">System details</h2>
+									<div class="table-responsive">
+										<table id="example" class="table table-striped table-bordered w-100 text-nowrap">
+											<thead>
+												<tr>
+													<th class="wd-15p">Server name</th>
+													<th class="wd-15p">IP Address</th>
+													<th class="wd-20p">OS</th>
+													<th class="wd-15p">Service pack</th>
+													<th class="wd-10p">System count</th>
+													<th class="wd-25p">Admin</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>DV1</td>
+													<td>192.168.1.10</td>
+													<td>Windows server 2008 standard</td>
+													<td>sp3</td>
+													<td>1</td>
+													<td>Leo Av</td>
+												</tr>
+												<tr>
+													<td>DV2</td>
+													<td>192.168.1.11</td>
+													<td>Windows server 2013</td>
+													<td>sp1</td>
+													<td>12</td>
+													<td>Torbjörn</td>
+												</tr>
+												<tr>
+													<td>DV3</td>
+													<td>192.168.1.12</td>
+													<td>Linux</td>
+													<td>R3</td>
+													<td>3</td>
+													<td>Abdulla Jar</td>
+												</tr>
+												<tr>
+													<td>Dv4</td>
+													<td>192.168.1.13</td>
+													<td>Ubuntu</td>
+													<td>R5</td>
+													<td>21</td>
+													<td>Sandra dahl</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="card" id="sys-stat">
+								<div class="card-header">
+									<h2 class="mb-0">System Statistics</h2>
 								</div>
 								<div class="card-body">
 									<div class="row">
-										<div class="col-lg-4">
-											<div class="form-group">
-												<div class="form-label mb-3">Standard users</div>
-												<div class="custom-switches-stacked">
-													<label class="custom-switch">
-														<h3>user can creat new blog</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new album</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new group</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new gallery</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can delete group</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can delete gallery</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
+										<div class="col-xl-8">
+											<div class="card  shadow">
+												<div class="card-header bg-transparent">
+													<div class="row align-items-center">
+														<div class="col">
+															<h6 class="text-uppercase text-light ls-1 mb-1">Overview</h6>
+															<h2 class="mb-0">Space Details</h2>
+														</div>
+													</div>
+												</div>
+												<div class="card-body">
+													<!-- Chart -->
+													<canvas id="lineChart" class="chart-dropshadow h-285"></canvas>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-4">
-											<div class="form-group">
-													<div class="form-label mb-3">PLUS users</div>
-												<div class="custom-switches-stacked">
-													<label class="custom-switch">
-														<h3>user can creat new blog</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new album</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new group</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new gallery</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can delete group</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can delete gallery</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
+										<div class="col-xl-4">
+											<div class="card pull-up shadow">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex server">
+															<div class="media-body text-left">
+																<h2 class="">Server1 </h2>
+																<h4 class=" mb-0 text-muted"><span class="text-primary"><i class="fe fe-arrow-up-circle "></i></span>
+																	Last 52 days Ago <span class="badge badge-primary">Online</span></h4>
+															</div>
+															<div class="align-self-center">
+																<i class="fe fe-hard-drive icon text-primary float-right"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card pull-up shadow">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex server">
+															<div class="media-body text-left">
+																<h2 class="">Server2</h2>
+																<h4 class=" mb-0 text-muted"><span class="text-primary"><i class="fe fe-arrow-up-circle "></i></span>
+																	Last 5 days Ago <span class="badge badge-primary">Online</span></h4>
+															</div>
+															<div class="align-self-center">
+																<i class="fe fe-hard-drive icon text-primary float-right"></i>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="card pull-up shadow">
+												<div class="card-content">
+													<div class="card-body">
+														<div class="media d-flex server">
+															<div class="media-body text-left">
+																<h2 class="">Server3</h2>
+																<h4 class=" mb-0 text-muted"><span class="text-danger"><i class="fe fe-arrow-down-circle "></i></span>
+																	Last 10 days Ago <span class="badge badge-danger">Offline</span></h4>
+															</div>
+															<div class="align-self-center">
+																<i class="fe fe-hard-drive icon text-danger float-right"></i>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-4">
-											<div class="form-group">
-												<div class="form-label mb-3">GOLD users</div>
-												<div class="custom-switches-stacked">
-													<label class="custom-switch">
-														<h3>user can creat new blog</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new album</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new group</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can creat new gallery</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can delete group</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-													<label class="custom-switch">
-														<h3>user can delete gallery</h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
-														<input type="checkbox" name="option" value="1" class="custom-switch-input" checked="">
-														<span class="custom-switch-indicator custom-switch-indicator-lg"></span>
-													</label>
-												</div>
-											</div>
-										</div>									
 									</div>
 								</div>
 							</div>
