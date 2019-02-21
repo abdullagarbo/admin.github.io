@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>DevGarden | Dashboard - Admin </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+
+    <!-- BEGIN GLOBAL STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL STYLES -->
+
+    <!-- BEGIN PAGE LEVEL CUSTOM PLUGINS -->
+    <link href="assets/css/custom_dt_customer.css" rel="stylesheet" type="text/css">
+    <!-- BEGIN PAGE LEVEL CUSTOM PLUGINS -->
+
+    <!-- BEGIN PAGE LEVEL CUSTOM STYLES -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom-accordions.css" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL CUSTOM STYLES -->
+</head>
+
+<body class="default-sidebar bg">
+
+    <!-- Tab Mobile View Header -->
+    <header class="tabMobileView header navbar fixed-top d-lg-none">
+        <ul class="navbar-nav flex-row ml-lg-auto w-100">
+            <li class="nav-item dropdown user-profile-dropdown w-100 text-center">
+                <div class="nav-toggle d-inline-block float-left mt-2">
+                    <a href="javascript:void(0);" class="nav-link sidebarCollapse d-inline-block" data-placement="bottom">
+                        <i class="flaticon-menu-line-2"></i>
+                    </a>
+                    <a href="index.html" class="ml-3"> <img src="assets/img/logo.png" class="img-fluid" alt="logo"></a>
+                </div>
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle user d-inline-block float-right" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media">
+                        <img src="assets/img/pd-5.jpg" class="img-fluid mr-2" alt="admin-profile">
+                        <div class="media-body align-self-center">
+                            <h6 class="mb-1">Sandra Dahlberg</h6>
+                            <p class="mb-0">Administrator</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-menu p-0 mt-5" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item d-flex mt-5" href="user_profile.html">
+                        <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="apps_scheduler.html">
+                        <i class="mr-3 flaticon-calendar"></i> <span class="align-self-center">My Schedule</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="apps_mailbox.html">
+                        <i class="mr-3 flaticon-mail-22"></i> <span class="align-self-center">Inbox</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="user_lockscreen_1.html">
+                        <i class="mr-3 flaticon-lock-1"></i> <span class="align-self-center">Lock Screen</span>
+                    </a>
+                    <a href="user_login_1.html" class="dropdown-item dropdown-item-btn">
+                        <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- Tab Mobile View Header -->
+
+    <!--  BEGIN NAVBAR  -->
+    <header class="desktop-nav header navbar fixed-top">
+        <div class="nav-logo mr-5 ml-4 d-lg-inline-block d-none">
+            <a href="index.html" class=""> <img src="assets/img/logo.png" class="img-fluid" alt="logo"></a>
+        </div>
+        <ul class="navbar-nav flex-row mr-auto">
+            <li class="nav-item dropdown language-dropdown mr-5  d-lg-inline-block d-none">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="language-dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/img/uk.png" alt="">
+                </a>
+                <div class="dropdown-menu position-absolute" aria-labelledby="language-dropdown">
+                    <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="assets/img/uk.png" class="flag-width mr-3"
+                            alt=""> <span class="align-self-center">&#xA0;English</span></a>
+                    <a class="dropdown-item d-flex" href="javascript:void(0);"><img src="assets/img/se.png" class="flag-width mr-3"
+                            alt=""> <span class="align-self-center">&#xA0;Swedish</span></a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown app-dropdown">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="app-dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="flaticon-star-circle-line"></span>
+                </a>
+                <div class="dropdown-menu  position-absolute" aria-labelledby="app-dropdown">
+                    <a class="dropdown-item d-flex" href="apps_drag_n_drop_calendar.html">
+                        <i class="mr-3 flaticon-calendar-1"></i><span>Calendar</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="dragndrop_scrumboard.html">
+                        <i class="mr-3 flaticon-edit-3"></i><span>Scrumboard</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="pages_helpdesk.html">
+                        <i class="mr-3 flaticon-copy"></i><span>Helpdesk</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="pages_contact_us.html">
+                        <i class="mr-3 flaticon-location-1"></i><span>Contact Us</span>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav-item ml-4 d-lg-none">
+                <form class="form-inline search-full form-inline search animated-search" role="search">
+                    <i class="flaticon-search-1 d-lg-none d-block"></i>
+                    <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                </form>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav flex-row ml-lg-auto">
+            <li class="nav-item mr-5 d-lg-block d-none">
+                <form class="form-inline form-inline search animated-search" role="search">
+                    <i class="flaticon-search-1 d-lg-none d-block"></i>
+                    <input type="text" class="form-control search-form-control  ml-lg-auto" placeholder="Search...">
+                </form>
+            </li>
+
+            <li class="nav-item dropdown user-profile-dropdown mr-5  d-lg-inline-block d-none">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="user-profile-dropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="media">
+                        <img src="assets/img/pd-5.jpg" class="img-fluid mr-2" alt="admin-profile">
+                        <div class="media-body align-self-center">
+                            <h6 class="mb-1">Sandra Dahlberg</h6>
+                            <p class="mb-0">Administrator</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-menu  position-absolute p-0" aria-labelledby="user-profile-dropdown">
+                    <div class="dropdown-item d-flex justify-content-around">
+                        <p class="mb-0 align-self-center">Your Account</p>
+                        <div class="">
+                            <i class="flaticon-star-outline"></i>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item d-flex" href="user_profile.html">
+                        <i class="mr-3 flaticon-user-11"></i> <span class="align-self-center">Profile Setting</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="apps_scheduler.html">
+                        <i class="mr-3 flaticon-calendar"></i> <span class="align-self-center">Schedule</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="apps_mailbox.html">
+                        <i class="mr-3 flaticon-mail-22"></i> <span class="align-self-center">Inbox</span>
+                    </a>
+                    <a class="dropdown-item d-flex" href="user_lockscreen_1.html">
+                        <i class="mr-3 flaticon-lock-1"></i> <span class="align-self-center">Lock Screen</span>
+                    </a>
+
+                    <div class="dropdown-item dropdown-item-btn d-flex justify-content-around">
+                        <a class="" href="user_login_1.html">
+                            <i class="mr-2 flaticon-power-off"></i> <span class="align-self-center">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown message-dropdown ml-lg-4 mr-lg-4">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="message-dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="icon flaticon-mail-1"></span><span class="badge badge-primary">13</span>
+                </a>
+                <div class="dropdown-menu  position-absolute p-0" aria-labelledby="message-dropdown">
+                    <div class="dropdown-item dropdown-header d-flex justify-content-between">
+                        <p class="mb-0 align-self-center">You have 13 new messages</p>
+                        <div class="">
+                            <i class="flaticon-chat-bubble"></i>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="message-scroll">
+                        <div class="dropdown-item">
+                            <div class="">
+                                <div class="media">
+                                    <div class="usr-img online mr-3">
+                                        <img class="usr-img rounded-circle" src="assets/img/profile-9.jpg" alt="profile">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex">
+                                            <p class="meta-user-name mr-3">Kara Young</p>
+                                            <p class="meta-time align-self-center mb-1">2 mins ago</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Simple and clean! Nice I'd like to </p>
+                                        <a href="javascript:void(0);" class="see-more">See More</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between dropdown-action">
+                                    <a href="javascript:void(0);" class="">View Details</a>
+                                    <i class="flaticon-delete"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="">
+                                <div class="media">
+                                    <div class="usr-img online mr-3">
+                                        <img class="usr-img rounded-circle" src="assets/img/profile-7.jpg" alt="profile">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="d-flex">
+                                            <p class="meta-user-name mr-3">Oscar Garner</p>
+                                            <p class="meta-time align-self-center mb-1">5 mins ago</p>
+                                        </div>
+                                        <p class="message-text mb-0 ">Simple and clean! Nice I'd like to </p>
+                                        <a href="javascript:void(0);" class="see-more">See More</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between dropdown-action">
+                                    <a href="javascript:void(0);" class="">View Details</a>
+                                    <i class="flaticon-delete"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer dropdown-item text-center">
+                        <a class="btn btn-info my-3 btn-rounded" href="javascript:void(0);">More...</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown notification-dropdown ml-3 mr-lg-4">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notification-dropdown" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="icon flaticon-bell-24"></span><span class="badge badge-success">15</span>
+                </a>
+                <div class="dropdown-menu position-absolute p-0" aria-labelledby="notification-dropdown">
+                    <div class="dropdown-item dropdown-header d-flex justify-content-between">
+                        <p class="mb-0 align-self-center">Notifications</p>
+                        <div class="">
+                            <i class="flaticon-gear-1"></i>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="notification-scroll">
+                        <div class="dropdown-item">
+                            <div class="">
+                                <div class="d-flex dropdown-action justify-content-between">
+                                    <span class="badge badge-info mb-3">6 Request</span>
+                                    <i class="flaticon-cancel-12"></i>
+                                </div>
+                                <p class="notification-text"><span class="meta-usrname">Kara Young</span>, <span class="meta-usrname">Xavier</span>,
+                                    <span class="meta-usrname">Lila Perry</span> and <span class="meta-usrname">3
+                                        others</span> send a friend request.</p>
+                                <p class="meta-time">6 mins ago</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="">
+                                <div class="d-flex dropdown-action justify-content-between">
+                                    <span class="badge badge-primary mb-3">Invoice</span>
+                                    <i class="flaticon-cancel-12"></i>
+                                </div>
+                                <p class="notification-text"> <span class="meta-usrname">Shaun</span>, <span class="meta-usrname">Amy
+                                        Diaz</span> and <span class="meta-usrname">3 others</span> send a friend
+                                    request.</p>
+                                <p class="meta-time">10 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown cs-toggle ml-3 mr-lg-4">
+                <a href="#" class="nav-link">
+                    <span class="icon flaticon-log-3"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!--  END NAVBAR  -->
+
+    <!--  BEGIN MAIN CONTAINER  -->
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <div class="cs-overlay"></div>
+        <div class="search-overlay"></div>
+
+        <div class="topbar-nav header navbar fixed-top" role="banner">
+            <div id="dismiss" class="d-lg-none text-right"><i class="flaticon-cancel-12 mr-3"></i></div>
+            <nav id="topbar">
+                <ul class="list-unstyled menu-categories d-lg-flex justify-content-lg-around mb-0" id="topAccordion">
+                    <div>
+                        <li class="menu">
+                            <a href="#0">
+                                <div class="">
+                                    <i class="flaticon-line-chart"></i>
+                                    <span>Statistics</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="menu">
+                            <a href="languages.html">
+                                <div class="">
+                                    <i class="flaticon-location-1"></i>
+                                    <span>Languages</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="menu">
+                            <a href="#0">
+                                <div class="">
+                                    <i class="flaticon-notes"></i>
+                                    <span>Reports</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="menu">
+                            <a href="#0">
+                                <div class="">
+                                    <i class="flaticon-money"></i>
+                                    <span>Payments</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="menu">
+                            <a href="#0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                                <div class="">
+                                    <i class="flaticon-user-11"></i>
+                                    <span>Users</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="menu">
+                            <a href="#0">
+                                <div class="">
+                                    <i class="flaticon-settings-7"></i>
+                                    <span>Settings</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <!--  BEGIN CONTENT PART  -->
+        <div id="content" class="main-content">
+            <div class="container">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h3>Reports</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Content alerts report</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area simple-accordion-content">
+                                <div id="accordion">
+                                    <div class="card mb-1">
+                                        <div class="card-header" id="headingOne1">
+                                            <h5 class="mb-0 mt-0">
+                                                <span class="alert alert-icon-left alert-light-danger mb-0" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                                    role="alert">
+                                                    <i class="flaticon-cancel-12 close" data-dismiss="alert"></i>
+                                                    <i class="flaticon-danger-3"></i>
+                                                    <strong>Warning!</strong> Naked and or pornographic content.
+                                                </span>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne1"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row mb-5">
+                                                    <div class="col-lg-12">
+                                                        <!-- Wrapper for slides -->
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="carousel-item active">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 class="mb-4">Reported content:</h4>
+                                                                        <div class="card mb-4">
+                                                                            <img class="card-img-top" src="assets/img/card-3.jpg"
+                                                                                alt="Card image cap">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title mt-3 mb-4">Card
+                                                                                    title</h5>
+                                                                                <p class="card-text mb-4">Some quick
+                                                                                    example text to build on the card
+                                                                                    title and make up the bulk of the
+                                                                                    card's content.</p>
+                                                                                <a href="#0" class="btn btn-gradient-warning mb-4 br-left-30 br-right-30">
+                                                                                    View profile</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h4 class="mb-4">To do:</h4>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Delete
+                                                                            post</a>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Hide
+                                                                            post</a>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Contact
+                                                                            user</a>
+                                                                    </div>
+                                                                    <div class="col-lg-8 col-md-8 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 class="mb-4">Who reported this content:</h4>
+                                                                        <div class="">
+                                                                            <div class="table-responsive mb-4">
+                                                                                <table id="customer-info-detail-3"
+                                                                                    class="table style-3 table-bordered  table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th class="align-center">#</th>
+                                                                                            <th class="text-center">Full
+                                                                                                Name</th>
+                                                                                            <th class="text-center">Report
+                                                                                                text</th>
+                                                                                            <th class="text-center">Action</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="align-center">
+                                                                                                <span><img src="assets/img/profile-17.jpg"
+                                                                                                        class="" alt="profile"></span>
+                                                                                            </td>
+                                                                                            <td class="text-center">Donna
+                                                                                                Roger</td>
+                                                                                            <td class="text-center">Some
+                                                                                                quick
+                                                                                                example text to build
+                                                                                                on the card
+                                                                                                title and make up the
+                                                                                                bulk of the
+                                                                                                card's content.</td>
+                                                                                            <td class="text-center">
+                                                                                                <button class="btn btn-outline-primary">view</button>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="align-center">
+                                                                                                <span><img src="assets/img/profile-16.jpg"
+                                                                                                        class="" alt="profile"></span>
+                                                                                            </td>
+                                                                                            <td class="text-center">Anna
+                                                                                                Dahlbom</td>
+                                                                                            <td class="text-center">Some
+                                                                                                quick
+                                                                                                example text to build
+                                                                                                on the card
+                                                                                                title and make up the
+                                                                                                bulk of the
+                                                                                                card's content.</td>
+                                                                                            <td class="text-center">
+                                                                                                <button class="btn btn-outline-primary">view</button>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <h4 class="mb-4">Why this content
+                                                                                reported:</h4>
+                                                                            <div class="list-group badge-list-group mb-4">
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">
+                                                                                    Naked and or pornographic
+                                                                                    content<span class=" badge badge-pill badge-warning">8</span>
+                                                                                </a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Terrorism
+                                                                                    <span class=" badge badge-pill badge-warning">23</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Hateful
+                                                                                    comments or symbols <span class=" badge badge-pill badge-warning">3</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Suicide
+                                                                                    or self-mutilation <span class=" badge badge-pill badge-warning">12</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Spam
+                                                                                    <span class=" badge badge-pill badge-warning">2</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Unauthorized
+                                                                                    mergers / sales <span class=" badge badge-pill badge-warning">10</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Violation
+                                                                                    of immaterial rights <span class=" badge badge-pill badge-warning">8</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">This
+                                                                                    is inappropriate content for
+                                                                                    the Horse Metro <span class=" badge badge-pill badge-warning">1</span></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-1">
+                                        <div class="card-header" id="headingOne2">
+                                            <h5 class="mb-0 mt-0">
+                                                <span class="alert alert-icon-left alert-light-warning mb-0"
+                                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                                                    aria-controls="collapseOne" role="alert">
+                                                    <i class="flaticon-cancel-12 close" data-dismiss="alert"></i>
+                                                    <i class="flaticon-bell-13"></i>
+                                                    <strong>Warning!</strong> Hateful comments or symbols.
+                                                </span>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne2"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row mb-5">
+                                                    <div class="col-lg-12">
+                                                        <!-- Wrapper for slides -->
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="carousel-item active">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 class="mb-4">Reported content:</h4>
+                                                                        <div class="card">
+                                                                            <img class="card-img-top" src="assets/img/card-3.jpg"
+                                                                                alt="Card image cap">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title mt-3 mb-4">Card
+                                                                                    title</h5>
+                                                                                <p class="card-text mb-4">Some quick
+                                                                                    example text to build on the card
+                                                                                    title and make up the bulk of the
+                                                                                    card's content.</p>
+                                                                                <a href="#0" class="btn btn-gradient-warning mb-4 br-left-30 br-right-30">
+                                                                                    View profile</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h4 class="mb-4">To do:</h4>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Delete
+                                                                            post</a>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Hide
+                                                                            post</a>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Contact
+                                                                            user</a>
+                                                                    </div>
+                                                                    <div class="col-lg-8 col-md-8 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 class="mb-4">Who reported this content:</h4>
+                                                                        <div class="">
+                                                                            <div class="table-responsive mb-4">
+                                                                                <table id="customer-info-detail-3"
+                                                                                    class="table style-3 table-bordered  table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th class="align-center">#</th>
+                                                                                            <th class="text-center">Full
+                                                                                                Name</th>
+                                                                                            <th class="text-center">Report
+                                                                                                text</th>
+                                                                                            <th class="text-center">Action</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="align-center">
+                                                                                                <span><img src="assets/img/profile-17.jpg"
+                                                                                                        class="" alt="profile"></span>
+                                                                                            </td>
+                                                                                            <td class="text-center">Donna
+                                                                                                Roger</td>
+                                                                                            <td class="text-center">Some
+                                                                                                quick
+                                                                                                example text to build
+                                                                                                on the card
+                                                                                                title and make up the
+                                                                                                bulk of the
+                                                                                                card's content.</td>
+                                                                                            <td class="text-center">
+                                                                                                <button class="btn btn-outline-primary">view</button>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="align-center">
+                                                                                                <span><img src="assets/img/profile-16.jpg"
+                                                                                                        class="" alt="profile"></span>
+                                                                                            </td>
+                                                                                            <td class="text-center">Anna
+                                                                                                Dahlbom</td>
+                                                                                            <td class="text-center">Some
+                                                                                                quick
+                                                                                                example text to build
+                                                                                                on the card
+                                                                                                title and make up the
+                                                                                                bulk of the
+                                                                                                card's content.</td>
+                                                                                            <td class="text-center">
+                                                                                                <button class="btn btn-outline-primary">view</button>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <h4 class="mb-4">Why this content
+                                                                                reported:</h4>
+                                                                            <div class="list-group badge-list-group mb-4">
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">
+                                                                                    Naked and or pornographic
+                                                                                    content<span class=" badge badge-pill badge-warning">8</span>
+                                                                                </a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Terrorism
+                                                                                    <span class=" badge badge-pill badge-warning">23</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Hateful
+                                                                                    comments or symbols <span class=" badge badge-pill badge-warning">3</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Suicide
+                                                                                    or self-mutilation <span class=" badge badge-pill badge-warning">12</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Spam
+                                                                                    <span class=" badge badge-pill badge-warning">2</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Unauthorized
+                                                                                    mergers / sales <span class=" badge badge-pill badge-warning">10</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">Violation
+                                                                                    of immaterial rights <span class=" badge badge-pill badge-warning">8</span></a>
+                                                                                <a class="list-group-item d-flex justify-content-between align-items-center">This
+                                                                                    is inappropriate content for
+                                                                                    the Horse Metro <span class=" badge badge-pill badge-warning">1</span></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-1">
+                                        <div class="card-header" id="headingOne3">
+                                            <h5 class="mb-0 mt-0">
+                                                <span class="alert alert-icon-left alert-light-primary mb-0"
+                                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                                                    aria-controls="collapseOne" role="alert">
+                                                    <i class="flaticon-cancel-12 close" data-dismiss="alert"></i>
+                                                    <i class="flaticon-danger-2"></i>
+                                                    <strong>Warning!</strong> This is inappropriate content for the
+                                                    Horse Metro.
+                                                </span>
+                                            </h5>
+                                        </div>
+
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingOne3"
+                                            data-parent="#accordion">
+                                            <div class="card-body">
+                                                <div class="row mb-5">
+                                                    <div class="col-lg-12">
+                                                        <!-- Wrapper for slides -->
+                                                        <div class="carousel-inner" role="listbox">
+                                                            <div class="carousel-item active">
+                                                                <div class="row">
+                                                                    <div class="col-lg-4 col-md-4 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 class="mb-4">Reported content:</h4>
+                                                                        <div class="card">
+                                                                            <img class="card-img-top" src="assets/img/card-3.jpg"
+                                                                                alt="Card image cap">
+                                                                            <div class="card-body">
+                                                                                <h5 class="card-title mt-3 mb-4">Card
+                                                                                    title</h5>
+                                                                                <p class="card-text mb-4">Some quick
+                                                                                    example text to build on the card
+                                                                                    title and make up the bulk of the
+                                                                                    card's content.</p>
+                                                                                <a href="#0" class="btn btn-gradient-warning mb-4 br-left-30 br-right-30">
+                                                                                    View profile</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h4 class="mb-4">To do:</h4>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Delete
+                                                                            post</a>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Hide
+                                                                            post</a>
+                                                                        <a href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30"
+                                                                            aria-expanded="false" data-toggle="dropdown">Contact
+                                                                            user</a>
+                                                                    </div>
+                                                                    <div class="col-lg-8 col-md-8 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 class="mb-4">Who reported this content:</h4>
+                                                                        <div class="">
+                                                                            <div class="table-responsive mb-4">
+                                                                                <table id="customer-info-detail-3"
+                                                                                    class="table style-3 table-bordered  table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th class="align-center">#</th>
+                                                                                            <th class="text-center">Full
+                                                                                                Name</th>
+                                                                                            <th class="text-center">Report
+                                                                                                text</th>
+                                                                                            <th class="text-center">Action</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td class="align-center">
+                                                                                                <span><img src="assets/img/profile-17.jpg"
+                                                                                                        class="" alt="profile"></span>
+                                                                                            </td>
+                                                                                            <td class="text-center">Donna
+                                                                                                Roger</td>
+                                                                                            <td class="text-center">Some
+                                                                                                quick
+                                                                                                example text to build
+                                                                                                on the card
+                                                                                                title and make up the
+                                                                                                bulk of the
+                                                                                                card's content.</td>
+                                                                                            <td class="text-center">
+                                                                                                <button class="btn btn-outline-primary">view</button>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="align-center">
+                                                                                                <span><img src="assets/img/profile-16.jpg"
+                                                                                                        class="" alt="profile"></span>
+                                                                                            </td>
+                                                                                            <td class="text-center">Anna
+                                                                                                Dahlbom</td>
+                                                                                            <td class="text-center">Some
+                                                                                                quick
+                                                                                                example text to build
+                                                                                                on the card
+                                                                                                title and make up the
+                                                                                                bulk of the
+                                                                                                card's content.</td>
+                                                                                            <td class="text-center">
+                                                                                                <button class="btn btn-outline-primary">view</button>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div class="">
+                                                                                <h4 class="mb-4">Why this content
+                                                                                    reported:</h4>
+                                                                                <div class="list-group badge-list-group mb-4">
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">
+                                                                                        Naked and or pornographic
+                                                                                        content<span class=" badge badge-pill badge-warning">8</span>
+                                                                                    </a>
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">Terrorism
+                                                                                        <span class=" badge badge-pill badge-warning">23</span></a>
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">Hateful
+                                                                                        comments or symbols <span class=" badge badge-pill badge-warning">3</span></a>
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">Suicide
+                                                                                        or self-mutilation <span class=" badge badge-pill badge-warning">12</span></a>
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">Spam
+                                                                                        <span class=" badge badge-pill badge-warning">2</span></a>
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">Unauthorized
+                                                                                        mergers / sales <span class=" badge badge-pill badge-warning">10</span></a>
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">Violation
+                                                                                        of immaterial rights <span
+                                                                                            class=" badge badge-pill badge-warning">8</span></a>
+                                                                                    <a class="list-group-item d-flex justify-content-between align-items-center">This
+                                                                                        is inappropriate content for
+                                                                                        the Horse Metro <span class=" badge badge-pill badge-warning">1</span></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  END CONTENT PART  -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+    <!--  BEGIN FOOTER  -->
+    <footer class="footer-section theme-footer">
+
+        <div class="footer-section-1  sidebar-theme">
+
+        </div>
+
+        <div class="footer-section-2 container-fluid">
+            <div class="row">
+                <div id="toggle-grid" class="col-xl-7 col-md-6 col-sm-6 col-12 text-sm-left text-center">
+
+                </div>
+                <div class="col-xl-5 col-md-6 col-sm-6 col-12">
+                    <ul class="list-inline mb-0 d-flex justify-content-sm-end justify-content-center mr-sm-3 ml-sm-0 mx-3">
+                        <li class="list-inline-item  mr-3">
+                            <p class="bottom-footer">&#xA9; 2019 <a target="_blank" href="#0">Devgarden AB</a></p>
+                        </li>
+                        <li class="list-inline-item align-self-center">
+                            <div class="scrollTop"><i class="flaticon-up-arrow-fill-1"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  END FOOTER  -->
+
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/reports.js"></script>
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <script src="assets/js/custom.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+
+
+    <!-- BEGIN PAGE LEVEL CUSTOM SCRIPTS -->
+    <script src="assets/js/ui-accordions.js"></script>
+    <!-- BEGIN PAGE LEVEL CUSTOM SCRIPTS -->
+</body>
+
+</html>

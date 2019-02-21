@@ -5605,7 +5605,7 @@ label.custom-control-label {
     border-radius: 0 !important
 }
 
-.new-control.new-checkbox.new-checkbox-line-through.>input:checked~span.new-chk-content,
+.new-control.new-checkbox.new-checkbox-line-through.checkbox-default>input:checked~span.new-chk-content,
 .new-control.new-checkbox.new-checkbox-line-through.checkbox-outline-default>input:checked~span.new-chk-content {
     color: #a2a3a3
 }
@@ -5883,8 +5883,8 @@ label.custom-control-label {
     background-color: #4f5163
 }
 
-.new-control.new-radio.new-radio-line-through.>input:checked~span.new-radio-content,
-.new-control.new-radio.new-radio-line-through.radio-classic-default>input:checked~span.new-radio-content {
+.new-control.new-radio.new-radio-line-through.radio-classic-default>input:checked~span.new-radio-content,
+.new-control.new-radio.new-radio-line-through.radio-default>input:checked~span.new-radio-content {
     color: #a2a3a3
 }
 

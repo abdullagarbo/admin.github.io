@@ -84,7 +84,7 @@
 
 .monthly-chart .monthly-chart-tab.nav-pills .nav-link.active,
 .monthly-chart .monthly-chart-tab.nav-pills .show>.nav-link {
-    background-image: linear-gradient(to right, #25d5e4 0, #6156ce 100%)
+    background-image: linear-gradient(to right, #25d5e4 0, #cdcbd6 100%)
 }
 
 .monthly-chart .monthly-chart-tab.nav-pills .nav-link {
@@ -694,14 +694,14 @@
 }
 
 .pignose-calendar .pignose-calendar-top .pignose-calendar-top-year {
-    color: #292977;
+    color: #85858d;
     font-size: 22px;
     font-weight: 600
 }
 
 .pignose-calendar .pignose-calendar-top .pignose-calendar-top-month {
     font-weight: 600;
-    color: #292977;
+    color: #a7a7ad;
     font-size: 22px;
     border-bottom: solid 1px #fff
 }
@@ -1291,6 +1291,19 @@
 .page-views .nav-pills .show>.nav-link {
     background-color: transparent;
     color: #1d1d1d
+}
+
+.email-success,
+.email-failed {
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+  display: none;
+  text-align: left !important;
+  margin: 0 0 0 0 !important;
+}
+
+.email-failed {
+    color: #E04343 !important;
 }
 
 .page-views .tab-content {

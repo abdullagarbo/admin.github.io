@@ -16,29 +16,9 @@
 
     <!-- BEGIN PAGE LEVEL CUSTOM STYLES -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/addedit_product.css" rel="stylesheet" type="text/css">
     <!-- END PAGE LEVEL CUSTOM STYLES -->
-
-
-    <style>
-        body, html {
-              height: 100%;
-              margin: 0;
-            }
-            
-            .bg {
-              /* The image used */
-              background-image: url("assets/img/bg-5.jpg");
-            
-              /* Full height */
-              height: 50%; 
-            
-              /* Center and scale the image nicely */
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-    </style>
-
 </head>
 
 <body class="default-sidebar bg">
@@ -317,7 +297,7 @@
                     </div>
                     <div>
                         <li class="menu">
-                            <a href="announces.html">
+                            <a href="#0">
                                 <div class="">
                                     <i class="flaticon-circle-plus "></i>
                                     <span>New announce</span>
@@ -382,6 +362,264 @@
         <!--  BEGIN CONTENT PART  -->
         <div id="content" class="main-content">
             <div class="container">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h3>Add announces</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>New announce </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area add-manage-product-1">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-4 col-md-12 text-center">
+                                        <div class="product-img">
+                                            <img src="assets/img/No_image.png" alt="img">
+                                        </div>
+                                        <div class="d-flex thumbs-img mt-4 justify-content-center">
+                                            <div class="mr-2">
+                                                <img src="assets/img/No_image.png" alt="img">
+                                            </div>
+                                            <div class="mr-2">
+                                                <img src="assets/img/No_image.png" alt="img">
+                                            </div>
+                                            <div class="mr-2">
+                                                <img src="assets/img/No_image.png" alt="img">
+                                            </div>
+                                            <div class="file-input position-relative">
+                                                <i class="flaticon-circle-plus"></i>
+                                                <input type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-4 col-md-12 text-center">
+                                        <div class="product-img">
+                                            <img src="assets/img/No_video.png" alt="img">
+                                        </div>
+                                        <div class="d-flex thumbs-img mt-4 justify-content-center">
+                                            <div class="mr-2">
+                                                <img src="assets/img/No_video.png" alt="img">
+                                            </div>
+                                            <div class="mr-2">
+                                                <img src="assets/img/No_video.png" alt="img">
+                                            </div>
+                                            <div class="mr-2">
+                                                <img src="assets/img/No_video.png" alt="img">
+                                            </div>
+                                            <div class="file-input position-relative">
+                                                <i class="flaticon-circle-plus"></i>
+                                                <input type="file">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-12">
+                                        <form class="form-horizontal" action="#">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-md-5">Announce place :</label>
+                                                    <div class="col-md-7">
+                                                        <select class="form-control form-custom" name="attribute_set">
+                                                            <option value="opt1">Timeline</option>
+                                                            <option value="opt2">Gallery</option>
+                                                            <option value="opt3">Blog</option>
+                                                            <option value="opt4">Hingstar</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>                                          
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Announce details </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area add-manage-product-2">
+                                <div class="row">
+                                    <div class="col-xl-7 col-md-12">
+                                        <div class="card card-default">
+                                            <div class="card-heading">
+                                                <h2 class="card-title"><span>GENERAL</span></h2>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="card-body">
+                                                    <form class="form-horizontal">
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Title :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="title" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Description :</label>
+                                                                <div class="col-md-8">
+                                                                    <textarea rows="4" cols="5" name="description"
+                                                                        class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                        
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Announce sponsored :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="sponsored" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">E-post address :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="email" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Website address :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="website" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Announce country :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="country" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Announce region :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="region" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Weight :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="weight" type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Annonce date :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="date" type="date">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Start date :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="start-date" type="date">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group cutom-autocomplete mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">End date :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="end-date" type="date">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-5 col-md-12">
+                                        <div class="card card-default">
+                                            <div class="card-heading">
+                                                <h2 class="card-title"><span>PRICING</span></h2>
+                                            </div>
+                                            <div class="card-body">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group mb-4">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Price :</label>
+                                                            <div class="col-md-8">
+                                                                <input class="form-control" name="price" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-4">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Price category :</label>
+                                                            <div class="col-md-8">
+                                                                <select class="form-control form-custom" name="tax_class">
+                                                                    <option value="">Please Select</option>
+                                                                    <option value="tax1">Category 1</option>
+                                                                    <option value="tax2">Category 2</option>
+                                                                    <option value="tax3">Category 3</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-4">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Discount :</label>
+                                                            <div class="col-md-8">
+                                                                <input class="form-control" name="discount" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-4">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Announce currency :</label>
+                                                            <div class="col-md-8">
+                                                                <select class="form-control form-custom" name="tax_class">
+                                                                    <option value="">Please Select</option>
+                                                                    <option value="tax1">US dollar</option>
+                                                                    <option value="tax2">Swedish krona</option>
+                                                                    <option value="tax3">Euro</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="align-center">
+                                            <input value="Preview Announce" class="btn" type="submit">
+                                            <input value="Publish Annonce" class="btn" type="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--  END CONTENT PART  -->
@@ -418,9 +656,11 @@
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/jquery.blockUI.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script>
         $(document).ready(function () {
@@ -433,7 +673,7 @@
 
 
     <!-- BEGIN PAGE LEVEL CUSTOM SCRIPTS -->
-
+    <script src="assets/js/autocomplete-addedit_product.js"></script>
     <!-- BEGIN PAGE LEVEL CUSTOM SCRIPTS -->
 </body>
 

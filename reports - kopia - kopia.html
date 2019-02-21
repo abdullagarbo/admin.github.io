@@ -14,31 +14,14 @@
     <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL STYLES -->
 
+    <!-- BEGIN PAGE LEVEL CUSTOM PLUGINS -->
+    <link href="assets/css/custom_dt_customer.css" rel="stylesheet" type="text/css">
+    <!-- BEGIN PAGE LEVEL CUSTOM PLUGINS -->
+
     <!-- BEGIN PAGE LEVEL CUSTOM STYLES -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom-accordions.css" rel="stylesheet" type="text/css" />
     <!-- END PAGE LEVEL CUSTOM STYLES -->
-
-
-    <style>
-        body, html {
-              height: 100%;
-              margin: 0;
-            }
-            
-            .bg {
-              /* The image used */
-              background-image: url("assets/img/bg-5.jpg");
-            
-              /* Full height */
-              height: 50%; 
-            
-              /* Center and scale the image nicely */
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-    </style>
-
 </head>
 
 <body class="default-sidebar bg">
@@ -317,16 +300,6 @@
                     </div>
                     <div>
                         <li class="menu">
-                            <a href="announces.html">
-                                <div class="">
-                                    <i class="flaticon-circle-plus "></i>
-                                    <span>New announce</span>
-                                </div>
-                            </a>
-                        </li>
-                    </div>
-                    <div>
-                        <li class="menu">
                             <a href="languages.html">
                                 <div class="">
                                     <i class="flaticon-location-1"></i>
@@ -337,7 +310,7 @@
                     </div>
                     <div>
                         <li class="menu">
-                            <a href="reports.html">
+                            <a href="#0">
                                 <div class="">
                                     <i class="flaticon-notes"></i>
                                     <span>Reports</span>
@@ -382,6 +355,148 @@
         <!--  BEGIN CONTENT PART  -->
         <div id="content" class="main-content">
             <div class="container">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h3>Reports</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Content alerts report</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area simple-accordion-content">
+                                <div id="accordion">
+                                    <div id="cardParent" class="card mb-1">
+                                        <!--<div id="headingOne1" class="card-header">
+                                            <h5 id="h5" class="mb-0 mt-0">
+                                                <span id="span" class="alert alert-icon-left alert-light-danger mb-0" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                                    role="alert">
+                                                    <i id="close" class="flaticon-cancel-12 close" data-dismiss="alert"></i>
+                                                    <i id="warning" class="flaticon-danger-3"></i>
+                                                    <strong id="reportLabel">Warning!</strong>
+                                                </span>
+                                            </h5>
+                                        </div>-->
+
+                                        <!--<div id="collapseOne" class="collapse" aria-labelledby="headingOne1"
+                                            data-parent="#accordion">
+                                            <div id="cBodyOne" class="card-body">
+                                                <div id="rowMb5" class="row mb-5">
+                                                    <div id="colLg12" class="col-lg-12">                                                        
+                                                        <div id="carouselInner" class="carousel-inner" role="listbox">
+                                                            <div id="carouselItem" class="carousel-item active">
+                                                                <div id="rowOne" class="row">
+
+
+
+
+                                                                    <div id="colLg4" class="col-lg-4 col-md-4 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 id="h4Content" class="mb-4">Reported content:</h4>
+                                                                        <div id="cardMb4" class="card mb-4">
+                                                                            <img id="imgOne" class="card-img-top" src="assets/img/card-3.jpg"
+                                                                                alt="Card image cap">
+                                                                            <div id="cBodyTwo" class="card-body">
+                                                                                <h5 id="cardTitle" class="card-title mt-3 mb-4">Card
+                                                                                    title</h5>
+                                                                                <p id="cardText" class="card-text mb-4">Some quick
+                                                                                    example text to build on the card
+                                                                                    title and make up the bulk of the
+                                                                                    card's content.</p>
+                                                                                <a id="viewProfile" href="#0" class="btn btn-gradient-warning mb-4 br-left-30 br-right-30">
+                                                                                    View profile</a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h4 id="h4Todo" class="mb-4">To do:</h4>
+                                                                        <a id="delet" href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30">Delete post</a>
+                                                                        <a id="hide" href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30">Hide post</a>
+                                                                        <a id="contact" href="#0" class="btn btn-gradient-danger mb-4 br-left-30 br-right-30">Contact user</a>
+                                                                    </div>
+
+                                                                    <div id="colLg8" class="col-lg-8 col-md-8 col-sm-12 mb-md-0 mb-3">
+                                                                        <h4 id="h4who" class="mb-4">Who reported this content:</h4>
+                                                                        <div class="">
+                                                                            <div id="tableMb4" class="table-responsive mb-4">
+                                                                                <table id="customerInfo"
+                                                                                    class="table style-3 table-bordered  table-hover">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th class="align-center">#</th>
+                                                                                            <th class="text-center">Full
+                                                                                                Name</th>
+                                                                                            <th class="text-center">Report
+                                                                                                text</th>
+                                                                                            <th class="text-center">Action</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td Id="tdImg" class="align-center">
+                                                                                                <span><img id="spanImg" src="assets/img/profile-17.jpg"
+                                                                                                        class="" alt="profile"></span>
+                                                                                            </td>
+                                                                                            <td id="tdName" class="text-center">Donna
+                                                                                                Roger</td>
+                                                                                            <td id="tdText" class="text-center">Some
+                                                                                                quick
+                                                                                                example text to build
+                                                                                                on the card
+                                                                                                title and make up the
+                                                                                                bulk of the
+                                                                                                card's content.</td>
+                                                                                            <td id="tdButton" class="text-center">
+                                                                                                <button class="btn btn-outline-primary">view</button>
+                                                                                            </td>
+                                                                                        </tr>                                                                                        
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+
+
+                                                                            <h4 id="h4why" class="mb-4">Why this content
+                                                                                reported:</h4>
+                                                                            <div id="listMb4" class="list-group badge-list-group mb-4">
+                                                                                <a id="reasonOne" class="list-group-item d-flex justify-content-between align-items-center">
+                                                                                    Naked and or pornographic
+                                                                                    content<span id="reasonCountOne" class=" badge badge-pill badge-warning">8</span>
+                                                                                </a>
+                                                                                <a id="reasonTwo" class="list-group-item d-flex justify-content-between align-items-center">Terrorism
+                                                                                    <span id="reasonCountTwo" class=" badge badge-pill badge-warning">23</span></a>
+                                                                                <a id="reasonThree" class="list-group-item d-flex justify-content-between align-items-center">Hateful
+                                                                                    comments or symbols <span id="reasonCountThree" class=" badge badge-pill badge-warning">3</span></a>
+                                                                                <a id="reasonFour" class="list-group-item d-flex justify-content-between align-items-center">Suicide
+                                                                                    or self-mutilation <span id="reasonCountFour" class=" badge badge-pill badge-warning">12</span></a>
+                                                                                <a id="reasonFive" class="list-group-item d-flex justify-content-between align-items-center">Spam
+                                                                                    <span id="reasonCountFive" class=" badge badge-pill badge-warning">2</span></a>
+                                                                                <a id="reasonSix" class="list-group-item d-flex justify-content-between align-items-center">Unauthorized
+                                                                                    mergers / sales <span id="reasonCountSix" class=" badge badge-pill badge-warning">10</span></a>
+                                                                                <a id="reasonSeven" class="list-group-item d-flex justify-content-between align-items-center">Violation
+                                                                                    of immaterial rights <span id="reasonCountSeven" class=" badge badge-pill badge-warning">8</span></a>
+                                                                                <a id="reasonEight" class="list-group-item d-flex justify-content-between align-items-center">This
+                                                                                    is inappropriate content for
+                                                                                    the Horse Metro <span id="reasonCountEight" class=" badge badge-pill badge-warning">1</span></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--  END CONTENT PART  -->
@@ -422,6 +537,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/reports.js"></script>
     <script>
         $(document).ready(function () {
             App.init();
@@ -433,7 +549,7 @@
 
 
     <!-- BEGIN PAGE LEVEL CUSTOM SCRIPTS -->
-
+    <script src="assets/js/ui-accordions.js"></script>
     <!-- BEGIN PAGE LEVEL CUSTOM SCRIPTS -->
 </body>
 
