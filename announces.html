@@ -522,14 +522,6 @@
                                                         </div>
                                                         <div class="form-group mb-4">
                                                             <div class="row">
-                                                                <label class="col-md-4">Weight :</label>
-                                                                <div class="col-md-8">
-                                                                    <input class="form-control" name="weight" type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group mb-4">
-                                                            <div class="row">
                                                                 <label class="col-md-4">Annonce date :</label>
                                                                 <div class="col-md-8">
                                                                     <input class="form-control" name="date" type="date">
@@ -544,11 +536,27 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="form-group cutom-autocomplete mb-4">
+                                                        <div class="form-group mb-4">
                                                             <div class="row">
                                                                 <label class="col-md-4">End date :</label>
                                                                 <div class="col-md-8">
                                                                     <input class="form-control" name="end-date" type="date">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Announce hours fr. :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="end-time" type="time">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mb-4">
+                                                            <div class="row">
+                                                                <label class="col-md-4">Announce hours to. :</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" name="end-time" type="time">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -564,7 +572,19 @@
                                                 <h2 class="card-title"><span>PRICING</span></h2>
                                             </div>
                                             <div class="card-body">
-                                                <form class="form-horizontal">
+                                                <form class="form-horizontal">                                                    
+                                                    <div class="form-group mb-4">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Price category :</label>
+                                                            <div class="col-md-8">
+                                                                <select id="choose" class="form-control form-custom" name="tax_class">
+                                                                    <option value="">Please Select</option>
+                                                                    <option value="tax1">Click + base price</option>
+                                                                    <option value="tax2">Time</option>                                                                    
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div class="form-group mb-4">
                                                         <div class="row">
                                                             <label class="col-md-4">Price :</label>
@@ -573,40 +593,30 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group mb-4">
+                                                    <div id="click" class="form-group mb-4" style="display: none">
                                                         <div class="row">
-                                                            <label class="col-md-4">Price category :</label>
+                                                            <label class="col-md-4">Price / click :</label>
                                                             <div class="col-md-8">
-                                                                <select class="form-control form-custom" name="tax_class">
-                                                                    <option value="">Please Select</option>
-                                                                    <option value="tax1">Category 1</option>
-                                                                    <option value="tax2">Category 2</option>
-                                                                    <option value="tax3">Category 3</option>
-                                                                </select>
+                                                                <input class="form-control" name="clickPrice" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="max" class="form-group mb-4" style="display: none">
+                                                        <div class="row">
+                                                            <label class="col-md-4">Max price :</label>
+                                                            <div class="col-md-8">
+                                                                <input class="form-control" name="maxPrice" type="text">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group mb-4">
                                                         <div class="row">
-                                                            <label class="col-md-4">Discount :</label>
+                                                            <label class="col-md-4">Discount code:</label>
                                                             <div class="col-md-8">
                                                                 <input class="form-control" name="discount" type="text">
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-group mb-4">
-                                                        <div class="row">
-                                                            <label class="col-md-4">Announce currency :</label>
-                                                            <div class="col-md-8">
-                                                                <select class="form-control form-custom" name="tax_class">
-                                                                    <option value="">Please Select</option>
-                                                                    <option value="tax1">US dollar</option>
-                                                                    <option value="tax2">Swedish krona</option>
-                                                                    <option value="tax3">Euro</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    </div>                                                    
                                                 </form>
                                             </div>
                                         </div>
@@ -665,6 +675,22 @@
     <script>
         $(document).ready(function () {
             App.init();
+        });
+    </script>
+    <script>
+        $("#choose").change(function () {
+            if ($(this).children("option:selected").text() == "Click + base price") {                
+
+                $("#click").removeAttr("style");
+                $("#max").removeAttr("style");
+            }else if ($(this).children("option:selected").text() == "Time") {
+
+                var max = document.getElementById("max");
+                var click = document.getElementById("click");
+
+                max.style.display = "none"; 
+                click.style.display = "none";
+            }
         });
     </script>
     <script src="assets/js/custom.js"></script>
